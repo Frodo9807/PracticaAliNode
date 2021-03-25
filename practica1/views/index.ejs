@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css" media="screen">
+        .centrador {
+    background-color:white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: .01%;
+ }
+
+ .contenedor {
+     width: 30%;
+     align-items: center;
+     align-content: center;
+     border-radius: 1.0%;
+     background-color:whitesmoke;
+     text-align: center;
+    margin: .5%;
+    
+ }
+
+button{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 60;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+  }
+    </style>
+    <meta charset='utf-8'>
+    <title>Prueba1</title>
+</head>
+<body>
+    <div class="centrador">
+        <div class="contenedor">
+            <from action="/">
+            <h4>
+            Nombre
+            </h4>
+            <input type="text" name="nombre" value="<%= nombre %>">
+            <button type="submit">Save</button>
+            <button>Delet</button> 
+            </from>
+            
+        </div>
+        <div class="contenedor">
+            <from action="/">
+            <h4>
+                Apellido Paterno
+            </h4>
+            <input type="text" name="apellidoPat" value=<%= apellidoPat %>>
+            <button type="submit">Save</button>
+            <button>Delet</button> 
+            </from>
+        </div>
+        <div class="contenedor">
+            <from action="/">
+            <h4>
+                Apellido Materno
+            </h4>
+            <input type="text" name="apellidoMat" value="<%= apellidoMat %>">
+            <button type="submit">Save</button>
+            <button>Delet</button> 
+            </from>
+        </div>
+    </div>
+    
+    <div class="centrador">
+        <div class="contenedor">
+            <from action="/">
+            <h4>
+                RFC
+            </h4>
+            <input type="text" name="rfc" value="<%= rfc %>">
+            <button type="submit">Save</button>
+            <button>Delet</button> 
+            </from>
+        </div>
+        <div class="contenedor">
+            <form action="/">
+            <h4>
+                CIEC de la empresa
+            </h4>
+            <input type="text" name="ciec" value="<%= ciec %>">
+            <button type="submit">Save</button>
+            <button>Delet</button> 
+            </form>
+        </div>
+    </div>
+
+    <div class="centrador">
+        <div class="contenedor">
+                <input type="file">
+        </div>
+        <div class="contenedor">
+                <input type="file">
+        </div>
+        <div class="contenedor">
+                <input type="file">
+        </div>
+    </div>
+</body>
+</html>
